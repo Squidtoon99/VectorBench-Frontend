@@ -45,10 +45,10 @@ export default function Home() {
 
   const handleRun = () => {
     console.log("Running simulation with:", {
-      startDate: dateRange?.from,
+      startDate: dateRange?.from, // "2024-01-01"
       endDate: dateRange?.to,
-      selectedStock,
-      selectedBots,
+      selectedStock, // ["TSLA", "AAPL"]
+      selectedBots, // ["random", "momentum", "mean-reversion"]
     });
     push("/results");
   };
